@@ -1,0 +1,122 @@
+{
+  "dataset": "Independent Ground-Truth Benchmark (45 headings)",
+  "total_test_samples": 45,
+  "overall_accuracy": 0.9556,
+  "macro_precision": 0.9762,
+  "macro_recall": 0.9583,
+  "macro_f1": 0.9619,
+  "weighted_precision": 0.9683,
+  "weighted_recall": 0.9556,
+  "weighted_f1": 0.956,
+  "ambiguity_detection": {
+    "accuracy": 0.9778,
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1_score": 0.8571
+  },
+  "venue_performance": {
+    "IEEE": {
+      "correct": 16,
+      "total": 16,
+      "accuracy": 1.0
+    },
+    "ACM": {
+      "correct": 15,
+      "total": 15,
+      "accuracy": 1.0
+    },
+    "SPRINGER": {
+      "correct": 12,
+      "total": 14,
+      "accuracy": 0.8571
+    }
+  },
+  "missing_section_detection_test_passed": true,
+  "classification_report_per_class": {
+    "ABSTRACT": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "ACKNOWLEDGMENTS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "APPENDIX": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "CONCLUSION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "DISCUSSION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "EVALUATION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 6.0
+    },
+    "INTRODUCTION": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "KEYWORDS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "METHODOLOGY": {
+      "precision": 1.0,
+      "recall": 0.8333333333333334,
+      "f1-score": 0.9090909090909091,
+      "support": 6.0
+    },
+    "REFERENCES": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 3.0
+    },
+    "RELATED_WORK": {
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.8,
+      "support": 3.0
+    },
+    "UNKNOWN": {
+      "precision": 0.7142857142857143,
+      "recall": 1.0,
+      "f1-score": 0.8333333333333334,
+      "support": 5.0
+    },
+    "accuracy": 0.9555555555555556,
+    "macro avg": {
+      "precision": 0.9761904761904762,
+      "recall": 0.9583333333333334,
+      "f1-score": 0.9618686868686869,
+      "support": 45.0
+    },
+    "weighted avg": {
+      "precision": 0.9682539682539683,
+      "recall": 0.9555555555555556,
+      "f1-score": 0.9560269360269359,
+      "support": 45.0
+    }
+  }
+}

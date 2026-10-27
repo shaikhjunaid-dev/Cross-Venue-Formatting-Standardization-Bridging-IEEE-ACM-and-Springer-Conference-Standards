@@ -1,0 +1,46 @@
+id,venue,raw_heading,expected_canonical,predicted_canonical,is_correct,expected_ambiguous,predicted_ambiguous,confidence,explanation,notes
+TEST_01,IEEE,Abstract---,ABSTRACT,ABSTRACT,True,False,False,1.0,Exact dictionary match for term 'abstract'.,IEEE style abstract prefix
+TEST_02,ACM,ABSTRACT,ABSTRACT,ABSTRACT,True,False,False,1.0,Exact dictionary match for term 'abstract'.,ACM uppercase abstract
+TEST_03,SPRINGER,Executive Summary,ABSTRACT,ABSTRACT,True,False,False,1.0,Exact dictionary match for term 'executive summary'.,Executive summary synonym
+TEST_04,IEEE,"Index Terms---Computer networks, routing algorithms, queueing theory",KEYWORDS,KEYWORDS,True,False,False,1.0,"Regex pattern '\bindex\s+terms\b' matched in 'index terms---computer networks, routing algorithms, queueing theory'.",IEEE Index terms heading
+TEST_05,ACM,CCS Concepts: • Information systems → Information retrieval,KEYWORDS,KEYWORDS,True,False,False,1.0,Regex pattern '\bccs\s+concepts\b' matched in 'ccs concepts: • information systems → information retrieval'.,ACM CCS concept heading
+TEST_06,SPRINGER,"Keywords: Graph neural networks, link prediction, benchmark",KEYWORDS,KEYWORDS,True,False,True,0.85,"Multiple candidate matches detected: ['KEYWORDS', 'EVALUATION']. Selected 'KEYWORDS' with highest rule weight (1.00).",Springer keywords format
+TEST_07,IEEE,I. INTRODUCTION,INTRODUCTION,INTRODUCTION,True,False,False,1.0,Exact dictionary match for term 'introduction'.,Standard IEEE Roman numeral intro
+TEST_08,ACM,1 INTRODUCTION,INTRODUCTION,INTRODUCTION,True,False,False,1.0,Exact dictionary match for term 'introduction'.,Standard ACM Arabic numeral intro
+TEST_09,SPRINGER,1. Context and Motivation,INTRODUCTION,INTRODUCTION,True,False,False,1.0,Exact dictionary match for term 'context and motivation'.,Introductory motivation heading
+TEST_10,IEEE,II. RELATED WORK AND BACKGROUND,RELATED_WORK,RELATED_WORK,True,False,False,0.98,Regex pattern '\brelated\s+works?\b' matched in 'related work and background'.,Compound background and related work
+TEST_11,ACM,2 State of the Art in Large Language Models,RELATED_WORK,RELATED_WORK,True,False,False,0.98,Regex pattern '\bstate\s+of\s+the\s+art\b' matched in 'state of the art in large language models'.,State of the art heading
+TEST_12,SPRINGER,2 Survey of Existing Literature,RELATED_WORK,UNKNOWN,False,False,False,0.0,No canonical rule matched for heading '2 Survey of Existing Literature'. Author domain-specific section.,Literature survey variant
+TEST_13,IEEE,III. SYSTEM ARCHITECTURE AND PROPOSED FRAMEWORK,METHODOLOGY,METHODOLOGY,True,False,False,0.95,Regex pattern '\bproposed\s+(?:method|system|framework|approach|model|architecture)\b' matched in 'system architecture and proposed framework'.,IEEE system design heading
+TEST_14,ACM,3 PROPOSED METHOD AND FORMAL PROOFS,METHODOLOGY,METHODOLOGY,True,False,False,0.95,Regex pattern '\bproposed\s+(?:method|system|framework|approach|model|architecture)\b' matched in 'proposed method and formal proofs'.,ACM method heading
+TEST_15,SPRINGER,3 The Proposed Standardization Engine,METHODOLOGY,UNKNOWN,False,False,False,0.0,No canonical rule matched for heading '3 The Proposed Standardization Engine'. Author domain-specific section.,Springer methodology section
+TEST_16,IEEE,Design and Implementation of Pipeline,METHODOLOGY,METHODOLOGY,True,False,False,1.0,Standard compound phrase matched 'design and implementation' -> mapped to 'METHODOLOGY'.,Design and implementation phrasing
+TEST_17,ACM,4 Materials and Methods,METHODOLOGY,METHODOLOGY,True,False,False,1.0,Exact dictionary match for term 'materials and methods'.,Experimental methodology variant
+TEST_18,IEEE,IV. EXPERIMENTAL EVALUATION AND RESULTS,EVALUATION,EVALUATION,True,False,False,0.95,Regex pattern '\bexperiment(?:s|al)?\b' matched in 'experimental evaluation and results'.,Evaluation and results compound
+TEST_19,ACM,4 EMPIRICAL BENCHMARKS,EVALUATION,EVALUATION,True,False,False,0.95,Regex pattern '\bbenchmarks?\b' matched in 'empirical benchmarks'.,Empirical evaluation variant
+TEST_20,SPRINGER,4 Performance Analysis and Simulation Results,EVALUATION,EVALUATION,True,False,False,0.95,Regex pattern '\bperformance\s+(?:evaluation|analysis)\b' matched in 'performance analysis and simulation results'.,Performance analysis heading
+TEST_21,IEEE,Case Study Evaluation,EVALUATION,EVALUATION,True,False,False,1.0,Exact dictionary match for term 'case study evaluation'.,Case study evaluation
+TEST_22,ACM,5 DISCUSSION,DISCUSSION,DISCUSSION,True,False,False,1.0,Exact dictionary match for term 'discussion'.,Standard ACM discussion
+TEST_23,SPRINGER,5 Discussion and Practical Implications,DISCUSSION,DISCUSSION,True,False,False,0.92,Regex pattern '^discussion\b' matched in 'discussion and practical implications'.,Discussion with implications
+TEST_24,IEEE,Threats to Validity,DISCUSSION,DISCUSSION,True,False,False,1.0,Exact dictionary match for term 'threats to validity'.,Validity threats heading
+TEST_25,IEEE,V. CONCLUSION AND FUTURE WORK,CONCLUSION,CONCLUSION,True,False,False,1.0,Standard compound phrase matched 'conclusion and future work' -> mapped to 'CONCLUSION'.,Standard IEEE conclusion with future work
+TEST_26,ACM,6 CONCLUDING OBSERVATIONS,CONCLUSION,CONCLUSION,True,False,False,1.0,Exact dictionary match for term 'concluding observations'.,Concluding observations variant
+TEST_27,SPRINGER,6 Summary and Outlook,CONCLUSION,CONCLUSION,True,False,False,1.0,Exact dictionary match for term 'summary and outlook'.,Summary and outlook variant
+TEST_28,IEEE,ACKNOWLEDGMENT,ACKNOWLEDGMENTS,ACKNOWLEDGMENTS,True,False,False,1.0,Exact dictionary match for term 'acknowledgment'.,Strict singular IEEE acknowledgment
+TEST_29,ACM,ACKNOWLEDGMENTS,ACKNOWLEDGMENTS,ACKNOWLEDGMENTS,True,False,False,1.0,Exact dictionary match for term 'acknowledgments'.,ACM plural acknowledgments
+TEST_30,SPRINGER,Acknowledgements,ACKNOWLEDGMENTS,ACKNOWLEDGMENTS,True,False,False,1.0,Exact dictionary match for term 'acknowledgements'.,Springer British spelling
+TEST_31,IEEE,Grant Support and Funding Disclosures,ACKNOWLEDGMENTS,ACKNOWLEDGMENTS,True,False,False,1.0,Regex pattern '\bfunding\b' matched in 'grant support and funding disclosures'.,Funding acknowledgment phrasing
+TEST_32,IEEE,REFERENCES,REFERENCES,REFERENCES,True,False,False,1.0,Exact dictionary match for term 'references'.,IEEE references
+TEST_33,ACM,REFERENCES,REFERENCES,REFERENCES,True,False,False,1.0,Exact dictionary match for term 'references'.,ACM references
+TEST_34,SPRINGER,Works Cited,REFERENCES,REFERENCES,True,False,False,1.0,Exact dictionary match for term 'works cited'.,Works cited variant
+TEST_35,ACM,APPENDIX: PROOFS OF THEOREMS,APPENDIX,APPENDIX,True,False,False,0.95,Regex pattern '\bappendix\b' matched in 'appendix: proofs of theorems'.,Appendix section
+TEST_36,SPRINGER,Supplementary Material,APPENDIX,APPENDIX,True,False,False,1.0,Exact dictionary match for term 'supplementary material'.,Supplementary material heading
+TEST_37,IEEE,Results and Discussion,EVALUATION,EVALUATION,True,True,True,0.95,Compound heading detected: matches both 'EVALUATION' and 'DISCUSSION'. Primary classification assigned to 'EVALUATION'.,Compound heading matching both Evaluation and Discussion
+TEST_38,ACM,Discussion and Conclusion,DISCUSSION,DISCUSSION,True,True,True,0.95,Compound heading detected: matches both 'DISCUSSION' and 'CONCLUSION'. Primary classification assigned to 'DISCUSSION'.,Compound heading matching both Discussion and Conclusion
+TEST_39,SPRINGER,Implementation and Evaluation,METHODOLOGY,METHODOLOGY,True,True,True,0.95,Compound heading detected: matches both 'METHODOLOGY' and 'EVALUATION'. Primary classification assigned to 'METHODOLOGY'.,Compound heading matching Methodology and Evaluation
+TEST_40,IEEE,Smart Grid Deployment in Urban Megacities,UNKNOWN,UNKNOWN,True,False,False,0.0,No canonical rule matched for heading 'Smart Grid Deployment in Urban Megacities'. Author domain-specific section.,Domain specific topical heading without rhetorical markers
+TEST_41,ACM,Ethical Considerations and Human Subjects,UNKNOWN,UNKNOWN,True,False,False,0.0,No canonical rule matched for heading 'Ethical Considerations and Human Subjects'. Author domain-specific section.,Standalone ethics statement outside standard schema
+TEST_42,SPRINGER,Historical Evolution of Microprocessors,UNKNOWN,UNKNOWN,True,False,False,0.0,No canonical rule matched for heading 'Historical Evolution of Microprocessors'. Author domain-specific section.,Topic heading without standard rhetorical terms
+TEST_43,IEEE,Hardware Testbed Specifications,UNKNOWN,UNKNOWN,True,False,False,0.0,No canonical rule matched for heading 'Hardware Testbed Specifications'. Author domain-specific section.,Hardware domain detail
+TEST_44,ACM,User Study Questionnaire,UNKNOWN,UNKNOWN,True,False,False,0.0,No canonical rule matched for heading 'User Study Questionnaire'. Author domain-specific section.,Questionnaire section
+TEST_45,SPRINGER,Ablation Study and Sensitivity Analysis,EVALUATION,EVALUATION,True,False,False,0.95,Regex pattern '\bablation\b' matched in 'ablation study and sensitivity analysis'.,Ablation evaluation heading

@@ -1,0 +1,11 @@
+raw_heading,cleaned_heading,numbering_type,level,canonical_section,secondary_section,confidence,is_ambiguous,is_compound,match_type,explanation
+Abstract,abstract,NONE,1,ABSTRACT,,1.0,False,False,RULE_MATCH,Exact dictionary match for term 'abstract'.
+"Index Terms---Document parsing, semantic classification, IEEE templates, cross-venue standardization","index terms---document parsing, semantic classification, ieee templates, cross-venue standardization",NONE,1,KEYWORDS,,1.0,False,False,RULE_MATCH,"Regex pattern '\bindex\s+terms\b' matched in 'index terms---document parsing, semantic classification, ieee templates, cross-venue standardization'."
+I. INTRODUCTION,introduction,ROMAN,1,INTRODUCTION,,1.0,False,False,RULE_MATCH,Exact dictionary match for term 'introduction'.
+II. RELATED WORK AND BACKGROUND,related work and background,ROMAN,1,RELATED_WORK,,0.98,False,False,RULE_MATCH,Regex pattern '\brelated\s+works?\b' matched in 'related work and background'.
+III. PROPOSED METHODOLOGY AND ARCHITECTURAL DESIGN,proposed methodology and architectural design,ROMAN,1,METHODOLOGY,,0.95,False,False,RULE_MATCH,Regex pattern '\bmethodolog(?:y|ies)\b' matched in 'proposed methodology and architectural design'.
+IV. EXPERIMENTAL EVALUATION AND BENCHMARK RESULTS,experimental evaluation and benchmark results,ROMAN,1,EVALUATION,,0.95,False,False,RULE_MATCH,Regex pattern '\bexperiment(?:s|al)?\b' matched in 'experimental evaluation and benchmark results'.
+V. DISCUSSION AND THREATS TO VALIDITY,discussion and threats to validity,ROMAN,1,DISCUSSION,,0.92,False,False,RULE_MATCH,Regex pattern '^discussion\b' matched in 'discussion and threats to validity'.
+VI. CONCLUSION AND FUTURE WORK,conclusion and future work,ROMAN,1,CONCLUSION,,1.0,False,False,COMPOUND_PHRASE,Standard compound phrase matched 'conclusion and future work' -> mapped to 'CONCLUSION'.
+ACKNOWLEDGMENT,acknowledgment,NONE,1,ACKNOWLEDGMENTS,,1.0,False,False,RULE_MATCH,Exact dictionary match for term 'acknowledgment'.
+REFERENCES,references,NONE,1,REFERENCES,,1.0,False,False,RULE_MATCH,Exact dictionary match for term 'references'.

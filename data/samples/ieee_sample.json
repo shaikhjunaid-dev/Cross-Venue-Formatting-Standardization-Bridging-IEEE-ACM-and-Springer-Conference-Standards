@@ -1,0 +1,16 @@
+{
+  "venue": "IEEE",
+  "paper_title": "Deep Semantic Parsing for Automated Scientific Document Standardization",
+  "headings": [
+    "Abstract",
+    "Index Terms---Document parsing, semantic classification, IEEE templates, cross-venue standardization",
+    "I. INTRODUCTION",
+    "II. RELATED WORK AND BACKGROUND",
+    "III. PROPOSED METHODOLOGY AND ARCHITECTURAL DESIGN",
+    "IV. EXPERIMENTAL EVALUATION AND BENCHMARK RESULTS",
+    "V. DISCUSSION AND THREATS TO VALIDITY",
+    "VI. CONCLUSION AND FUTURE WORK",
+    "ACKNOWLEDGMENT",
+    "REFERENCES"
+  ]
+}

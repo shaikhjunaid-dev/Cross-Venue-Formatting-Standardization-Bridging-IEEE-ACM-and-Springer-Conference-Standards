@@ -1,0 +1,18 @@
+{
+  "venue": "ACM",
+  "paper_title": "Cross-Platform Publication Schema Alignment in Computer Science",
+  "headings": [
+    "ABSTRACT",
+    "CCS CONCEPTS",
+    "Keywords",
+    "1 INTRODUCTION",
+    "2 PRIOR WORK AND LITERATURE REVIEW",
+    "3 SYSTEM DESIGN AND FORMAL MODEL",
+    "4 EMPIRICAL EVALUATION",
+    "5 PRACTICAL IMPLICATIONS AND DISCUSSION",
+    "6 CONCLUDING REMARKS",
+    "ACKNOWLEDGMENTS",
+    "REFERENCES",
+    "APPENDIX: PROOFS OF CONVERGENCE"
+  ]
+}

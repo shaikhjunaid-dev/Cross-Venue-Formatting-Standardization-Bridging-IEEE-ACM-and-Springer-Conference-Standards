@@ -1,0 +1,155 @@
+{
+  "validation_summary": {
+    "venue": "ACM",
+    "full_venue_name": "ACM Primary Article Template (sigconf)",
+    "is_compliant": true,
+    "missing_mandatory": [],
+    "missing_recommended": [],
+    "warnings": [
+      "ACM style violation in heading 'I. INTRODUCTION': ACM templates use Arabic numerals (e.g., '1 Introduction'), but Roman numeral was detected.",
+      "ACM style violation in heading 'II. RELATED WORK AND BACKGROUND': ACM templates use Arabic numerals (e.g., '1 Introduction'), but Roman numeral was detected.",
+      "ACM style violation in heading 'III. PROPOSED METHODOLOGY AND ARCHITECTURAL DESIGN': ACM templates use Arabic numerals (e.g., '1 Introduction'), but Roman numeral was detected.",
+      "ACM style violation in heading 'IV. EXPERIMENTAL EVALUATION AND BENCHMARK RESULTS': ACM templates use Arabic numerals (e.g., '1 Introduction'), but Roman numeral was detected.",
+      "ACM style violation in heading 'V. DISCUSSION AND THREATS TO VALIDITY': ACM templates use Arabic numerals (e.g., '1 Introduction'), but Roman numeral was detected.",
+      "ACM style violation in heading 'VI. CONCLUSION AND FUTURE WORK': ACM templates use Arabic numerals (e.g., '1 Introduction'), but Roman numeral was detected."
+    ],
+    "suggestions": [
+      "ACM uses 'Keywords' instead of IEEE's 'Index Terms'."
+    ],
+    "sequence_issues": [],
+    "total_headings_analyzed": 10,
+    "unmapped_headings_count": 0
+  },
+  "section_mappings": [
+    {
+      "raw_heading": "Abstract",
+      "cleaned_heading": "abstract",
+      "numbering_type": "NONE",
+      "level": 1,
+      "canonical_section": "ABSTRACT",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'abstract'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "Index Terms---Document parsing, semantic classification, IEEE templates, cross-venue standardization",
+      "cleaned_heading": "index terms---document parsing, semantic classification, ieee templates, cross-venue standardization",
+      "numbering_type": "NONE",
+      "level": 1,
+      "canonical_section": "KEYWORDS",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '\\bindex\\s+terms\\b' matched in 'index terms---document parsing, semantic classification, ieee templates, cross-venue standardization'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "I. INTRODUCTION",
+      "cleaned_heading": "introduction",
+      "numbering_type": "ROMAN",
+      "level": 1,
+      "canonical_section": "INTRODUCTION",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'introduction'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "II. RELATED WORK AND BACKGROUND",
+      "cleaned_heading": "related work and background",
+      "numbering_type": "ROMAN",
+      "level": 1,
+      "canonical_section": "RELATED_WORK",
+      "secondary_section": null,
+      "confidence": 0.98,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '\\brelated\\s+works?\\b' matched in 'related work and background'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "III. PROPOSED METHODOLOGY AND ARCHITECTURAL DESIGN",
+      "cleaned_heading": "proposed methodology and architectural design",
+      "numbering_type": "ROMAN",
+      "level": 1,
+      "canonical_section": "METHODOLOGY",
+      "secondary_section": null,
+      "confidence": 0.95,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '\\bmethodolog(?:y|ies)\\b' matched in 'proposed methodology and architectural design'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "IV. EXPERIMENTAL EVALUATION AND BENCHMARK RESULTS",
+      "cleaned_heading": "experimental evaluation and benchmark results",
+      "numbering_type": "ROMAN",
+      "level": 1,
+      "canonical_section": "EVALUATION",
+      "secondary_section": null,
+      "confidence": 0.95,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '\\bexperiment(?:s|al)?\\b' matched in 'experimental evaluation and benchmark results'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "V. DISCUSSION AND THREATS TO VALIDITY",
+      "cleaned_heading": "discussion and threats to validity",
+      "numbering_type": "ROMAN",
+      "level": 1,
+      "canonical_section": "DISCUSSION",
+      "secondary_section": null,
+      "confidence": 0.92,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '^discussion\\b' matched in 'discussion and threats to validity'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "VI. CONCLUSION AND FUTURE WORK",
+      "cleaned_heading": "conclusion and future work",
+      "numbering_type": "ROMAN",
+      "level": 1,
+      "canonical_section": "CONCLUSION",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Standard compound phrase matched 'conclusion and future work' -> mapped to 'CONCLUSION'.",
+      "match_type": "COMPOUND_PHRASE"
+    },
+    {
+      "raw_heading": "ACKNOWLEDGMENT",
+      "cleaned_heading": "acknowledgment",
+      "numbering_type": "NONE",
+      "level": 1,
+      "canonical_section": "ACKNOWLEDGMENTS",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'acknowledgment'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "REFERENCES",
+      "cleaned_heading": "references",
+      "numbering_type": "NONE",
+      "level": 1,
+      "canonical_section": "REFERENCES",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'references'.",
+      "match_type": "RULE_MATCH"
+    }
+  ]
+}

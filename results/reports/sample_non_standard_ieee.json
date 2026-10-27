@@ -1,0 +1,119 @@
+{
+  "validation_summary": {
+    "venue": "IEEE",
+    "full_venue_name": "IEEE Conference Template (2-Column Format)",
+    "is_compliant": false,
+    "missing_mandatory": [
+      "KEYWORDS",
+      "METHODOLOGY",
+      "REFERENCES"
+    ],
+    "missing_recommended": [],
+    "warnings": [
+      "IEEE convention alert: Heading 'ACKNOWLEDGMENTS' uses plural form. IEEE style explicitly requires singular 'ACKNOWLEDGMENT'.",
+      "Missing 3 mandatory section(s) for IEEE: ['KEYWORDS', 'METHODOLOGY', 'REFERENCES']"
+    ],
+    "suggestions": [
+      "Change 'ACKNOWLEDGMENTS' to singular 'ACKNOWLEDGMENT' for IEEE submission.",
+      "Add required section: 'KEYWORDS' before submission.",
+      "Add required section: 'METHODOLOGY' before submission.",
+      "Add required section: 'REFERENCES' before submission."
+    ],
+    "sequence_issues": [],
+    "total_headings_analyzed": 7,
+    "unmapped_headings_count": 1
+  },
+  "section_mappings": [
+    {
+      "raw_heading": "Abstract",
+      "cleaned_heading": "abstract",
+      "numbering_type": "NONE",
+      "level": 1,
+      "canonical_section": "ABSTRACT",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'abstract'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "1. Motivation and Problem Context",
+      "cleaned_heading": "motivation and problem context",
+      "numbering_type": "ARABIC_HIERARCHICAL",
+      "level": 1,
+      "canonical_section": "INTRODUCTION",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '\\bmotivation\\b' matched in 'motivation and problem context'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "2. Literature Review",
+      "cleaned_heading": "literature review",
+      "numbering_type": "ARABIC_HIERARCHICAL",
+      "level": 1,
+      "canonical_section": "RELATED_WORK",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'literature review'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "3. Case Study of Campus Network Traffic",
+      "cleaned_heading": "case study of campus network traffic",
+      "numbering_type": "ARABIC_HIERARCHICAL",
+      "level": 1,
+      "canonical_section": "UNKNOWN",
+      "secondary_section": null,
+      "confidence": 0.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "No canonical rule matched for heading '3. Case Study of Campus Network Traffic'. Author domain-specific section.",
+      "match_type": "NONE"
+    },
+    {
+      "raw_heading": "4. Results and Discussion",
+      "cleaned_heading": "results and discussion",
+      "numbering_type": "ARABIC_HIERARCHICAL",
+      "level": 1,
+      "canonical_section": "EVALUATION",
+      "secondary_section": "DISCUSSION",
+      "confidence": 0.95,
+      "is_ambiguous": true,
+      "is_compound": true,
+      "explanation": "Compound heading detected: matches both 'EVALUATION' and 'DISCUSSION'. Primary classification assigned to 'EVALUATION'.",
+      "match_type": "COMPOUND_PHRASE"
+    },
+    {
+      "raw_heading": "5. Concluding Notes",
+      "cleaned_heading": "concluding notes",
+      "numbering_type": "ARABIC_HIERARCHICAL",
+      "level": 1,
+      "canonical_section": "CONCLUSION",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Regex pattern '\\bconcluding\\b' matched in 'concluding notes'.",
+      "match_type": "RULE_MATCH"
+    },
+    {
+      "raw_heading": "ACKNOWLEDGMENTS",
+      "cleaned_heading": "acknowledgments",
+      "numbering_type": "NONE",
+      "level": 1,
+      "canonical_section": "ACKNOWLEDGMENTS",
+      "secondary_section": null,
+      "confidence": 1.0,
+      "is_ambiguous": false,
+      "is_compound": false,
+      "explanation": "Exact dictionary match for term 'acknowledgments'.",
+      "match_type": "RULE_MATCH"
+    }
+  ]
+}
